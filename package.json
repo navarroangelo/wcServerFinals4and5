@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bulma": "^1.0.2",
+    "font-awesome": "^4.7.0",
+    "save": "^2.9.0"
+  }
+}
