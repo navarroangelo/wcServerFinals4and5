@@ -15,29 +15,28 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">Profile</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/education"
-                >Education</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/skills">Skills</router-link>
-            </li>
-          </ul>
+          <ul class="navbar-nav"></ul>
         </div>
       </div>
     </nav>
-    <router-view />
+    <profile></profile>
+    <education></education>
+    <skills></skills>
   </div>
 </template>
 
 <script>
+import Profile from "./components/Profile";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+
 export default {
-  name: "App",
+  name: "app",
+  components: {
+    Profile,
+    Education,
+    Skills,
+  },
 };
 </script>
 
